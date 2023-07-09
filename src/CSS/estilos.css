@@ -1,0 +1,88 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Oxanium", cursive;
+}
+
+body::before{
+    background-image: url(../imagens/bg-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    min-height: calc(100vh - 152px);
+}
+
+.selecao-de-personagens .lista-de-personagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.lista-de-personagens .personagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.lista-de-personagens .personagem.selecionado{
+    box-shadow: 0px 0px 24px 5px #0271f7;
+}
+
+.selecao-de-personagens .personagens{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 585px;
+}
+
+.selecao-de-personagens .personagens .titulo{
+    border-bottom: 2px solid #47f4ff;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.personagem-selecionado{
+    text-align: center;
+    max-height: 530px;
+}
+
+.personagem-selecionado .personagem-grande{
+    width: 430px;
+    height: 430px;
+}
+
+.personagem-selecionado .nome-personagem{
+    border-bottom: 2px solid #47f4ff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
